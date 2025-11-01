@@ -30,6 +30,40 @@ public class BestTimeToBuyAndSellStock {
                 min = prices[i];
             }
         }
+
+        Queue<TreeNode> queue = new LinkedList<TreeNode>();
+        
+        queue.add(root);
+        
+        List<Integer> tempList = new ArrayList<Integer>();
+        tempList.add(root.val);
+        result.add(tempList);
+        
+        while(!queue.isEmpty()) {
+            Queue<TreeNode> currentLevel = new LinkedList<TreeNode>();
+            
+            List<Integer> list = new ArrayList<Integer>();
+            
+            while(!queue.isEmpty()) {
+                TreeNode current = queue.remove();
+                
+                if(current.left != null) {
+                    currentLevel.add(current.left);
+                    list.add(current.left.val);
+                }
+                
+                if(current.right != null) {
+                    currentLevel.add(current.right);
+                    list.add(current.right.val);
+                }
+            }
+            
+            if(list.size() > 0) {
+                result.add(list);
+            }
+
+            queue = currentLevel;
+        }
         
         return max;
         // this new comments
