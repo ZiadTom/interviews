@@ -87,7 +87,7 @@ public class BestTimeToBuyAndSellStock {
         // this is comment
         // this is comment
         // this is comment
-        // this is comment// this is comment
+        // this is comment
         // this is comment
         // this is comment
         // this is comment
