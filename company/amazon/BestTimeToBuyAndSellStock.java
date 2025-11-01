@@ -66,30 +66,5 @@ public class BestTimeToBuyAndSellStock {
         }
         
         return max;
-        // this new comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
-        // this is comment
     }
 }
